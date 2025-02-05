@@ -527,8 +527,17 @@
   .relative {
     position: relative;
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .block {
     display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .hidden {
+    display: none;
   }
   .inline-flex {
     display: inline-flex;
@@ -539,8 +548,8 @@
   .table {
     display: table;
   }
-  .max-w-96 {
-    max-width: calc(var(--spacing) * 96);
+  .max-w-\[1240px\] {
+    max-width: 1240px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -551,12 +560,31 @@
   .resize {
     resize: both;
   }
+  .items-center {
+    align-items: center;
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .text-center {
-    text-align: center;
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .text-\[32px\] {
+    font-size: 32px;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
   }
   .underline {
     text-decoration-line: underline;
@@ -621,6 +649,10 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-outline-style {
   syntax: "*";
